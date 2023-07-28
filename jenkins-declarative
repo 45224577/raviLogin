@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('clone'){
+            steps{
+               git branch: 'DEV', credentialsId: '45224577', url: 'https://github.com/45224577/raviLogin.git' 
+            }
+        }
+    }
+}
